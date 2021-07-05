@@ -38,6 +38,8 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+const newNavItem1 = document.createElement('a')
+const newNavItem2 = document.createElement('a')
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
@@ -49,6 +51,17 @@ links[3].textContent = "Features"
 links[4].textContent = "About"
 links[5].textContent = "Contact"
 console.log(links)
+links.forEach((item) => {
+  item.style.color = 'green'})
+
+document.querySelector('nav').appendChild(newNavItem1)
+newNavItem1.textContent = 'Help'
+newNavItem1.href = 'a'
+newNavItem1.style.color = 'green'
+document.querySelector('nav').prepend(newNavItem2)
+newNavItem2.textContent = 'Testpage'
+newNavItem2.href= 'a'
+newNavItem2.style.color = 'green'
 
 let codeimg = document.querySelector('#cta-img')
 codeimg.setAttribute('src', siteContent['cta']["img-src"])
@@ -70,6 +83,15 @@ const bottomcontent = maincontent.querySelector('.bottom-content')
 const headerbot = bottomcontent.querySelectorAll('h4')
 const pbot = bottomcontent.querySelectorAll('p')
 
+const contacts = document.querySelector('.contact')
+const headercont = contacts.querySelectorAll('h4')
+const pcont = contacts.querySelectorAll('p')
+
+const foot = document.querySelector('footer')
+const pfoot = foot.querySelector('p')
+
+
+
 headertop[0].textContent="Features"
 headertop[1].textContent="About"
 ptop[0].textContent="Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
@@ -82,3 +104,10 @@ headerbot[2].textContent = 'Vision'
 pbot[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 pbot[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis." 
 pbot[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+headercont.textContent = "Contact"
+pcont[0].textContent = "123 Way 456 Street Somewhere, USA"
+pcont[1].textContent = "1 (888) 888-8888"
+pcont[2].textContent = "sales@greatidea.io"
+
+pfoot.textContent = "Copyright Great Idea! 2018"
