@@ -40,3 +40,45 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let links = document.querySelectorAll('nav a')
+links[0].textContent = "Services"
+links[1].textContent = "Product"
+links[2].textContent = "Vision"
+links[3].textContent = "Features"
+links[4].textContent = "About"
+links[5].textContent = "Contact"
+console.log(links)
+
+let codeimg = document.querySelector('#cta-img')
+codeimg.setAttribute('src', siteContent['cta']["img-src"])
+
+let headerone = document.querySelector('h1')
+headerone.textContent="DOM Is Awesome"
+
+let buttonone = document.querySelector('button')
+buttonone.textContent = "Get Started"
+
+let maincontent = document.querySelector('.main-content')
+let topcontent = maincontent.querySelector('.top-content')
+console.log(topcontent)
+const headertop = topcontent.querySelectorAll('h4')
+const ptop = topcontent.querySelectorAll('p')
+const imgmain = maincontent.querySelector('.middle-img')
+
+const bottomcontent = maincontent.querySelector('.bottom-content')
+const headerbot = bottomcontent.querySelectorAll('h4')
+const pbot = bottomcontent.querySelectorAll('p')
+
+headertop[0].textContent="Features"
+headertop[1].textContent="About"
+ptop[0].textContent="Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ptop[1].textContent="About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+imgmain.setAttribute('src', siteContent['main-content']["middle-img-src"])
+
+headerbot[0].textContent = 'Services'
+headerbot[1].textContent = 'Product'
+headerbot[2].textContent = 'Vision'
+pbot[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+pbot[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis." 
+pbot[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
