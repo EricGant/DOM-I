@@ -1,0 +1,8 @@
+{
+  "name": "dom-1",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "stretch": "parcel stretch-assignment/index.html"
+  }
+}
